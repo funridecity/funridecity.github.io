@@ -1,64 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun Ride</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <div class="container">   
-        <div class="floor"></div>
-        <div class="pattern"></div>
-        <div class="leftTree">
-          <div></div><div></div>
+    <meta charset="utf-8">
+    <title>Fun Ride City | Home</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Fun Ride City - Directory &amp; Listings Bootstrap Template">
+    <meta name="keywords" content="bootstrap, business, directory, listings, e-commerce, car dealer, city guide, real estate, job board, user account, multipurpose, ui kit, html5, css3, javascript, gallery, slider, touch">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" color="#5bbad5" href="safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#766df4">
+    <meta name="theme-color" content="#ffffff">
+ 
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          var preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 2000);
+        };
+      })();
+      
+    </script>
+    <!-- Vendor Styles-->
+    <link rel="stylesheet" media="screen" href="vendor/simplebar/dist/simplebar.min.css"/>
+    <link rel="stylesheet" media="screen" href="vendor/tiny-slider/dist/tiny-slider.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="css/theme.min.css">
+    <link rel="stylesheet" media="screen" href="css/custom.css">
+  </head>
+  <!-- Body-->
+  <body class="bg-dark">
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner"></div><span>Loading...</span>
+      </div>
+    </div>
+    <main class="page-wrapper">
+      <!-- Navbar-->
+      <header class="navbar navbar-expand-lg navbar-dark fixed-top" data-scroll-header>
+        <div class="container">
+          <a class="navbar-brand me-3 me-xl-4" href="/"><img class="d-block" src="img/logo/logo-light.svg" width="116" alt="Fun Ride City"></a>
+          <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="btn btn-link btn-light btn-sm d-none d-lg-block order-lg-3" href="#">
+            <i class="fi-user me-2"></i>
+            Join To Club
+          </a>
+            <a class="btn btn-primary btn-sm ms-2 order-lg-3" href="#">
+              <i class="fi-plus me-2"></i>
+              Launch App
+            </a>
+          <div class="collapse navbar-collapse order-lg-2" id="navbarNav">
+            <ul class="navbar-nav navbar-nav-scroll" style="max-height: 35rem;">
+              <!-- Menu items-->
+              <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+              <li class="nav-item active"><a class="nav-link" href="/">News</a></li>
+              <li class="nav-item active"><a class="nav-link" href="/">Services</a></li>
+              <li class="nav-item active"><a class="nav-link" href="/">Gallery</a></li>
+              <li class="nav-item active"><a class="nav-link" href="/">About Us</a></li>
+              <li class="nav-item active"><a class="nav-link" href="/">Contact Us</a></li>
+
+              <li class="nav-item d-lg-none"><a class="nav-link" href="#"  ><i class="fi-user me-2"></i>Join To Club</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="centerTree">
-          <div></div>
-        </div>
-        <div class="rightTree"></div>
-        <div class="Balloons">
-          <div class="BalloonLeft"></div>
-          <div class="Ballooncenter"></div>
-          <div class="BalloonRight"></div>
-          <div class="BalloonBase"></div>
-          <div class="BalloonBaseShadow"></div>
-        </div>
-        <div class="booth">
-          <div class="ticket"><span>&#9733</span> TICKET <span>&#9733</span></div>
-        </div>
-        <div class="boothShadow"></div>
-        <div class="ferris_wheel">
-          <div class="wheel_wrap">
-            <div class="wheel">
-              <span></span>
-              <span></span>
-              <span></span>
+      </header>
+      <!-- Page content-->
+      <!-- Hero-->
+      <section class="bg-dark pb-3">
+      
+        <div class="video-container">
+          <video autoplay muted loop>
+              <source src="video/hero.mp4" type="video/mp4" />
+          </video>
+          <div class="overlay"></div>
+          <div class="container py-5 align-items-center centered">
+            <div class="row align-items-center mt-2 mt-md-0 pt-md-4 py-lg-5">
+              <div class="col-md-12 order-md-1 mx-auto text-center justify-content-center  align-items-center h-100">
+                <h1 class="display-4 text-light pb-3 mb-4 mb-lg-5 position-relative">Welcome to <span class='text-primary'>Fun Ride</span> City</h1>
+              </div>
             </div>
           </div>
-          <div class="buckets">
-            <div><span></span></div>
-            <div><span></span></div>
-            <div><span></span></div>
-            <div><span></span></div>
-            <div><span></span></div>
-            <div><span></span></div>
-            <div><span></span></div>
-            <div><span></span></div>
+        </div>
+
+      </section>
+
+      <!-- Body type selection-->
+      <section class="container pb-5 mb-md-4">
+        <div class="d-sm-flex align-items-center justify-content-between mb-3 mb-sm-4 pb-sm-2 mt-5">
+          <h2 class="h3 text-light mb-2 mb-sm-0">Our facilities</h2><a class="btn btn-link btn-light fw-normal px-0" href="#">View all<i class="fi-arrow-long-right fs-sm mt-0 ps-1 ms-2"></i></a>
+        </div>
+        <div class="row row-cols-2 row-cols-sm-1 row-cols-md-3 row-cols-lg-6 g-2 g-md-4">
+          <!-- Item-->
+          <div class="col">
+            <div class="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center"><img class="d-block mx-auto mb-3 mt-3" src="img/funride/facilities/parking.png" width="75" alt="Large Car Parking"><a class="nav-link-light stretched-link fw-bold" href="#">Large Car Parking
+            </a></div>
           </div>
-          <div class="stand">
-            <div></div>
-            <div></div>
+          <!-- Item-->
+          <div class="col">
+            <div class="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center"><img class="d-block mx-auto mb-3 mt-3" src="img/funride/facilities/play.png" width="75" alt="Kids Soft Play area"><a class="nav-link-light stretched-link fw-bold" href="#">Kids Soft Play area</a></div>
+          </div>
+          <!-- Item-->
+          <div class="col">
+            <div class="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center"><img class="d-block mx-auto mb-3 mt-3" src="img/funride/facilities/restaurant.png" width="75" alt="Food court"><a class="nav-link-light stretched-link fw-bold" href="#">Food court</a></div>
+          </div>
+          <!-- Item-->
+          <div class="col">
+            <div class="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center"><img class="d-block mx-auto mb-3 mt-3" src="img/funride/facilities/partyhall.png" width="75" alt="Party Hall"><a class="nav-link-light stretched-link fw-bold" href="#">Party Hall</a></div>
+          </div>
+          <!-- Item-->
+          <div class="col">
+            <div class="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center"><img class="d-block mx-auto mb-3 mt-3" src="img/funride/facilities/cafe.png" width="75" alt="Mini Cafes"><a class="nav-link-light stretched-link fw-bold" href="#">Mini Cafes</a></div>
+          </div>
+          <!-- Item-->
+          <div class="col">
+            <div class="card card-body card-light card-hover bg-transparent border-0 px-0 pt-0 text-center"><img class="d-block mx-auto mb-3 mt-3" src="img/funride/facilities/go-kart.png" width="75" alt="Karting"><a class="nav-link-light stretched-link fw-bold" href="#">Karting</a></div>
+          </div>
+         
+        </div>
+      </section>
+      <!-- Top offers-->
+      <section class="container pt-sm-1 pb-5 mb-md-4">
+        <div class="d-sm-flex align-items-center justify-content-between mb-4 pb-sm-2">
+          <h2 class="h3 text-light mb-2 mb-sm-0">Festivals</h2><a class="btn btn-link btn-light fw-normal px-0" href="#">View all<i class="fi-arrow-long-right fs-sm mt-0 ps-1 ms-2"></i></a>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <!-- Item-->
+            <div class="card card-light card-hover h-lg-100 mb-4 mb-lg-0">
+              <div class="tns-carousel-wrapper card-img-top card-img-hover"><a class="img-overlay" href="#"></a>
+         
+                <div class="tns-carousel-inner">
+                  <img src="img/funride/test2.png" alt="Image">
+                  <img src="img/funride/test.png" alt="Image">
+                </div>
+              </div>
+              <div class="card-body">
+ 
+                <h3 class="h6 mb-1"><a class="nav-link-light" href="#">FAMILY TIME</a></h3>
+                <div class="text-light mb-1">
+                  Amusement parks foster family bonds through shared thrills and fun activities.
+                </div>
+               </div>
+              <div class="card-footer border-0 pt-0">
+                <div class="border-top border-light pt-3">
+                  <div class="row g-2">
+                    <div class="col me-sm-1">
+                      <div class="bg-dark rounded text-center w-100 h-100 p-2"> <img class="d-block h4 text-light m-1 mx-auto" src="img/funride/theme-park.png" width="50" alt="Image"> <span class="fs-xs text-light">Thrills</span></div>
+                    </div>
+                    <div class="col me-sm-1">
+                      <div class="bg-dark rounded text-center w-100 h-100 p-2"> <img class="d-block h4 text-light m-1 mx-auto" src="img/funride/bonding.png" width="50" alt="Image"> <span class="fs-xs text-light">Bonding</span></div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-dark rounded text-center w-100 h-100 p-2"> <img class="d-block h4 text-light m-1 mx-auto" src="img/funride/memory.png" width="50" alt="Image"> <span class="fs-xs text-light">Memories</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <!-- Item-->
+            <div class="card card-light card-hover card-horizontal mb-4">
+              <div class="tns-carousel-wrapper card-img-top card-img-hover"> 
+          
+                <div class="tns-carousel-inner position-absolute top-0 h-100">
+                  <div class="bg-size-cover bg-position-center w-100 h-100" style="background-image: url(img/funride/test3.png);"></div>
+                  <div class="bg-size-cover bg-position-center w-100 h-100" style="background-image: url(img/funride/test.png);"></div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <h3 class="h6 mb-1"><a class="nav-link-light" href="#">ADRENALINE FUN</a></h3>
+                 <div class="fs-sm text-light opacity-70">Fun Ride provides an exhilarating adventure for adrenaline enthusiasts in a dynamic environment.</div>
+                <div class="border-top border-light mt-3 pt-3">
+                  <div class="row g-2">
+                    <div class="col me-sm-1">
+                      <div class="bg-dark rounded text-center w-100 h-100 p-2"> <img class="d-block h4 text-light m-1 mx-auto" src="img/funride/theme-park.png" width="40" alt="Image"> <span class="fs-xs text-light">Thrills</span></div>
+                    </div>
+                    <div class="col me-sm-1">
+                      <div class="bg-dark rounded text-center w-100 h-100 p-2"> <img class="d-block h4 text-light m-1 mx-auto" src="img/funride/bonding.png" width="40" alt="Image"> <span class="fs-xs text-light">Bonding</span></div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-dark rounded text-center w-100 h-100 p-2"> <img class="d-block h4 text-light m-1 mx-auto" src="img/funride/memory.png" width="40" alt="Image"> <span class="fs-xs text-light">Memories</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Item-->
+            <div class="card card-light card-hover card-horizontal">
+              <div class="tns-carousel-wrapper card-img-top card-img-hover"> 
+          
+                <div class="tns-carousel-inner position-absolute top-0 h-100">
+                  <div class="bg-size-cover bg-position-center w-100 h-100" style="background-image: url(img/funride/test2.png);"></div>
+                  <div class="bg-size-cover bg-position-center w-100 h-100" style="background-image: url(img/funride/test.png);"></div>
+                </div>
+              </div>
+              <div class="card-body">
+
+                <h3 class="h6 mb-1"><a class="nav-link-light" href="#">REGULAR EVENTS</a></h3>
+                 <div class="fs-sm text-light opacity-70">Frequent scheduled entertainment or activities at the amusement park.</div>
+                <div class="border-top border-light mt-3 pt-3">
+                  <div class="row g-2">
+                    <div class="col me-sm-1">
+                      <div class="bg-dark rounded text-center w-100 h-100 p-2"> <img class="d-block h4 text-light m-1 mx-auto" src="img/funride/theme-park.png" width="40" alt="Image"> <span class="fs-xs text-light">Thrills</span></div>
+                    </div>
+                    <div class="col me-sm-1">
+                      <div class="bg-dark rounded text-center w-100 h-100 p-2"> <img class="d-block h4 text-light m-1 mx-auto" src="img/funride/bonding.png" width="40" alt="Image"> <span class="fs-xs text-light">Bonding</span></div>
+                    </div>
+                    <div class="col">
+                      <div class="bg-dark rounded text-center w-100 h-100 p-2"> <img class="d-block h4 text-light m-1 mx-auto" src="img/funride/memory.png" width="40" alt="Image"> <span class="fs-xs text-light">Memories</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="sun"></div>
-        <div class="cloudLeft"></div>
-        <div class="cloudRight"></div>
-      
+      </section>
+      <!-- Brands-->
+      <section class="container py-2 py-sm-3">
+        <div class="row g-2 g-sm-4">
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/3.png" width="46" alt=""></a></div>
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/4.png" width="46" alt=""></a></div>
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/6.png" width="46" alt=""></a></div>
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/8.png" width="46" alt=""></a></div>
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/1.png" width="46" alt=""></a></div>
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/2.png" width="46" alt=""></a></div>
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/14.png" width="46" alt=""></a></div>
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/9.png" width="46" alt=""></a></div>
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/8.png" width="46" alt=""></a></div>
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/12.png" width="46" alt=""></a></div>
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/10.png" width="46" alt=""></a></div>
+          <div class="col-3 col-sm-2 col-xl-1 mb-4 pb-2"><a class="opacity-40 opacity-transition d-table mx-auto" href="#"><img src="img/funride/brands/13.png" width="46" alt=""></a></div>
+        </div>
+      </section>
+      <!-- Features-->
+      <section class="container pt-4 pt-md-5">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <h2 class="h3 text-light mb-2 mb-sm-0">Go Karting</h2><a class="btn btn-link btn-light fw-normal px-0" href="#">Go Karting scheduley<i class="fi-arrow-long-right fs-sm mt-0 ps-1 ms-2"></i></a>
+        </div>
+        <div class="row">
+          <div class="col-md-5 col-lg-4 offset-lg-1 pt-4 mt-2 pt-md-5 mt-md-3">
+            <div class="d-flex pb-4 pb-md-5 mb-2"><i class="fi-file lead text-primary mt-1 order-md-2"></i>
+              <div class="text-md-end ps-3 ps-md-0 pe-md-3 order-md-1">
+                <h3 class="h6 text-light mb-1">Introduction to Go-Karting</h3>
+                <p class="fs-sm text-light opacity-70 mb-0">Overview of go-karting basics, emphasizing the excitement of racing on specialized tracks.</p>
+              </div>
+            </div>
+            <div class="d-flex pb-4 pb-md-5 mb-2"><i class="fi-search lead text-primary mt-1 order-md-2"></i>
+              <div class="text-md-end ps-3 ps-md-0 pe-md-3 order-md-1">
+                <h3 class="h6 text-light mb-1">Inside a Go-Kart: Structure and Speed</h3>
+                <p class="fs-sm text-light opacity-70 mb-0">Brief exploration of key go-kart components—chassis, engines, and the thrilling speed they offer.</p>
+              </div>
+            </div>
+            <div class="d-flex pb-4 pb-md-5 mb-2"><i class="fi-settings lead text-primary mt-1 order-md-2"></i>
+              <div class="text-md-end ps-3 ps-md-0 pe-md-3 order-md-1">
+                <h3 class="h6 text-light mb-1">Go-Kart Tracks: Curves and Challenges</h3>
+                <p class="fs-sm text-light opacity-70 mb-0">Insight into track design, featuring twists, turns, and elements designed for an exhilarating driving experience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 d-none d-md-block">
+            <div class="position-relative mx-auto h-100" style="max-width: 5rem; min-height: 26rem;">
+              <div class="content-overlay pt-5" data-jarallax-element="100"><img class="pt-3 mt-5" src="img/funride/home/car.png" alt="Car"></div>
+              <div class="position-absolute top-0 start-50 translate-middle-x h-100 overflow-hidden"><img src="img/funride/home/road-line.svg" width="2" alt="Road line"></div>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-4 pt-md-5 mt-md-3">
+            <div class="d-flex pb-4 pb-md-5 mb-2"><i class="fi-info-circle lead text-primary mt-1"></i>
+              <div class="ps-3">
+                <h3 class="h6 text-light mb-1">Competitive Go-Kart Racing</h3>
+                <p class="fs-sm text-light opacity-70 mb-0">Dive into go-kart competitions, highlighting skill diversity and intense racing on various circuits.</p>
+              </div>
+            </div>
+            <div class="d-flex pb-4 pb-md-5 mb-2"><i class="fi-users lead text-primary mt-1"></i>
+              <div class="ps-3">
+                <h3 class="h6 text-light mb-1">Go-Karting as Recreation</h3>
+                <p class="fs-sm text-light opacity-70 mb-0">Popular recreational sport, offers excitement and skill enhancement.</p>
+              </div>
+            </div>
+            <div class="d-flex pb-4 pb-md-5 mb-2"><i class="fi-calculator lead text-primary mt-1"></i>
+              <div class="ps-3">
+                <h3 class="h6 text-light mb-1">Thrills of Go-Karting Competitions</h3>
+                <p class="fs-sm text-light opacity-70 mb-0">Emphasis on the excitement of competitions, focusing on skillful maneuvers, high speeds, and the overall spectacle of go-kart racing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Latest cars (carousel)-->
+      <section class="container pt-sm-5 pt-4 pb-3">
+        <div class="d-sm-flex align-items-center justify-content-between mb-3 mb-sm-4 pb-2">
+          <h2 class="h3 text-light mb-3 mb-sm-0">The latest gallery collections</h2>
+          <div class="d-flex align-items-center">
+            <a class="btn btn-link btn-light fw-normal px-0" href="#">View all<i class="fi-arrow-long-right fs-sm mt-0 ps-1 ms-2"></i></a>
+          </div>
+        </div>
+        <div class="tns-carousel-wrapper tns-controls-outside-xxl tns-nav-outside tns-carousel-light">
+          <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 3, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 16},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;900&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;gutter&quot;: 24}}}">
+            <div>
+              <div class="card card-light card-hover h-100">
+                <div class="card-img-top card-img-hover"><a class="img-overlay" href="#"></a>
+                  <div class="content-overlay end-0 top-0 pt-3 pe-3">
+                    <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist"><i class="fi-heart"></i></button>
+                  </div><img src="img/gallery/01.png" alt="Image">
+                </div>
+                <div class="card-body">
+                   <h3 class="h6 mb-1"><a class="nav-link-light" href="#">Title</a></h3>
+                  <div class="fs-sm text-light opacity-70">Description</div>
+                </div>
+                <div class="card-footer border-0 pt-0">
+                  <div class="border-top border-light pt-3">
+                    <div class="row g-2">
+                      <div class="col me-sm-1">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-calendar d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">2019</span></div>
+                      </div>
+                      <div class="col me-sm-1">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-map-pin d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">Iran</span></div>
+                      </div>
+                      <div class="col">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-apartment d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">Place</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div>
+              <div class="card card-light card-hover h-100">
+                <div class="card-img-top card-img-hover"><a class="img-overlay" href="#"></a>
+                  <div class="content-overlay end-0 top-0 pt-3 pe-3">
+                    <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist"><i class="fi-heart"></i></button>
+                  </div><img src="img/gallery/02.png" alt="Image">
+                </div>
+                <div class="card-body">
+                   <h3 class="h6 mb-1"><a class="nav-link-light" href="#">Title</a></h3>
+                  <div class="fs-sm text-light opacity-70">Description</div>
+                </div>
+                <div class="card-footer border-0 pt-0">
+                  <div class="border-top border-light pt-3">
+                    <div class="row g-2">
+                      <div class="col me-sm-1">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-calendar d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">2019</span></div>
+                      </div>
+                      <div class="col me-sm-1">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-map-pin d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">Iran</span></div>
+                      </div>
+                      <div class="col">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-apartment d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">Place</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div>
+              <div class="card card-light card-hover h-100">
+                <div class="card-img-top card-img-hover"><a class="img-overlay" href="#"></a>
+                  <div class="content-overlay end-0 top-0 pt-3 pe-3">
+                    <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist"><i class="fi-heart"></i></button>
+                  </div><img src="img/gallery/03.png" alt="Image">
+                </div>
+                <div class="card-body">
+                   <h3 class="h6 mb-1"><a class="nav-link-light" href="#">Title</a></h3>
+                  <div class="fs-sm text-light opacity-70">Description</div>
+                </div>
+                <div class="card-footer border-0 pt-0">
+                  <div class="border-top border-light pt-3">
+                    <div class="row g-2">
+                      <div class="col me-sm-1">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-calendar d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">2019</span></div>
+                      </div>
+                      <div class="col me-sm-1">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-map-pin d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">Iran</span></div>
+                      </div>
+                      <div class="col">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-apartment d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">Place</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            <div>
+              <div class="card card-light card-hover h-100">
+                <div class="card-img-top card-img-hover"><a class="img-overlay" href="#"></a>
+                  <div class="content-overlay end-0 top-0 pt-3 pe-3">
+                    <button class="btn btn-icon btn-light btn-xs text-primary rounded-circle" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Wishlist"><i class="fi-heart"></i></button>
+                  </div><img src="img/gallery/04.png" alt="Image">
+                </div>
+                <div class="card-body">
+                   <h3 class="h6 mb-1"><a class="nav-link-light" href="#">Title</a></h3>
+                  <div class="fs-sm text-light opacity-70">Description</div>
+                </div>
+                <div class="card-footer border-0 pt-0">
+                  <div class="border-top border-light pt-3">
+                    <div class="row g-2">
+                      <div class="col me-sm-1">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-calendar d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">2019</span></div>
+                      </div>
+                      <div class="col me-sm-1">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-map-pin d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">Iran</span></div>
+                      </div>
+                      <div class="col">
+                        <div class="bg-dark rounded text-center w-100 h-100 p-2"><i class="fi-apartment d-block h4 text-light mb-0 mx-center"></i><span class="fs-xs text-light">Place</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CTA carousel-->
+      <section class="container pt-4 pb-5 py-sm-5">
+             <div>
+              <div class="card card-body p-sm-5 card-light h-100">
+                <div class="row align-items-center py-3 py-sm-0">
+                  <div class="col-md-6 mb-4 pb-3 mb-md-0 pb-md-0 text-center text-md-start">
+                    <h2 class="text-light">Our Services</h2>
+                    <p class="fs-lg text-light opacity-70 pb-md-4">Join Fun Ride on a journey of excitement, innovation, and investment in the world of amusement parks. Together, let's build unforgettable experiences that captivate hearts and create lasting memories for generations to come.</p><a class="btn btn-primary" href="#">Contact Us<i class="fi-chevron-right fs-sm ms-2"></i></a>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="row row-cols-sm-3 row-cols-md-2 row-cols-lg-3 gy-4 gx-3 gx-sm-4">
+                      <div class="col">
+                        <div class="d-table bg-dark rounded-3 p-4 mx-auto mb-3"><img class="d-block m-sm-2" src="img/services/implementation.png" width="56" alt="Vetted buyers"></div>
+                        <div class="fw-bold text-center">Implementation</div>
+                      </div>
+                      <div class="col">
+                        <div class="d-table bg-dark rounded-3 p-4 mx-auto mb-3"><img class="d-block m-sm-2" src="img/services/production.png" width="56" alt="Smart tools"></div>
+                        <div class="fw-bold text-center">Production</div>
+                      </div>
+                      <div class="col">
+                        <div class="d-table bg-dark rounded-3 p-4 mx-auto mb-3"><img class="d-block m-sm-2" src="img/services/investment.png" width="56" alt="Handshake"></div>
+                        <div class="fw-bold text-center">Investment</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </section>
+      <!-- Latest news (Blog)-->
+      <section class="container pb-4 pb-sm-5 mb-2 mb-md-4">
+        <div class="d-sm-flex align-items-center justify-content-between mb-3 mb-sm-4 pb-sm-2">
+          <h2 class="h3 text-light mb-2 mb-sm-0">Latest news</h2><a class="btn btn-link btn-light fw-normal px-0" href="#">Go to blog<i class="fi-arrow-long-right fs-sm mt-0 ps-1 ms-2"></i></a>
+        </div>
+        <div class="tns-carousel-wrapper tns-nav-outside tns-carousel-light">
+          <div class="tns-carousel-inner" data-carousel-options="{&quot;items&quot;: 3, &quot;controls&quot;: false, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1, &quot;gutter&quot;: 16},&quot;500&quot;:{&quot;items&quot;:2, &quot;gutter&quot;: 18},&quot;900&quot;:{&quot;items&quot;:3, &quot;gutter&quot;: 20}, &quot;1100&quot;:{&quot;gutter&quot;: 24}}}">
+            <div>
+              <article><a class="d-block rounded-3 overflow-hidden" href="#"><img class="d-block" src="img/blog/1.png" alt="Image"></a>
+                <div class="py-3"><a class="fs-xs text-uppercase text-decoration-none" href="#">Category</a>
+                  <h3 class="text-light fs-base pt-1"><a class="nav-link" href="#">Title</a></h3><a class="d-flex align-items-center text-decoration-none" href="#">
+                    <img class="rounded-circle" src="img/avatars/13.png" width="44" alt="Avatar">
+                    <div class="ps-2">
+                      <h6 class="fs-sm text-light lh-base mb-1">author</h6>
+                      <div class="d-flex fs-xs text-light opacity-60"><span class="me-2 pe-1"><i class="fi-calendar-alt me-1"></i>May 8</span><span><i class="fi-chat-circle me-1"></i>No comments</span></div>
+                    </div></a>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article><a class="d-block rounded-3 overflow-hidden" href="#"><img class="d-block" src="img/blog/2.png" alt="Image"></a>
+                <div class="py-3"><a class="fs-xs text-uppercase text-decoration-none" href="#">Category</a>
+                  <h3 class="text-light fs-base pt-1"><a class="nav-link" href="#">Title</a></h3><a class="d-flex align-items-center text-decoration-none" href="#">
+                    <img class="rounded-circle" src="img/avatars/13.png" width="44" alt="Avatar">
+                    <div class="ps-2">
+                      <h6 class="fs-sm text-light lh-base mb-1">author</h6>
+                      <div class="d-flex fs-xs text-light opacity-60"><span class="me-2 pe-1"><i class="fi-calendar-alt me-1"></i>Apr 25</span><span><i class="fi-chat-circle me-1"></i>6 comments</span></div>
+                    </div></a>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article><a class="d-block rounded-3 overflow-hidden" href="#"><img class="d-block" src="img/blog/3.png" alt="Image"></a>
+                <div class="py-3"><a class="fs-xs text-uppercase text-decoration-none" href="#">Category</a>
+                  <h3 class="text-light fs-base pt-1"><a class="nav-link" href="#">Title</a></h3><a class="d-flex align-items-center text-decoration-none" href="#">
+                    <img class="rounded-circle" src="img/avatars/13.png" width="44" alt="Avatar">
+                    <div class="ps-2">
+                      <h6 class="fs-sm text-light lh-base mb-1">author</h6>
+                      <div class="d-flex fs-xs text-light opacity-60"><span class="me-2 pe-1"><i class="fi-calendar-alt me-1"></i>Mar 12</span><span><i class="fi-chat-circle me-1"></i>2 comments</span></div>
+                    </div></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer bg-faded-light">
+      <div class="border-bottom border-light py-4">
+        <div class="container d-sm-flex align-items-center justify-content-between">
+          <div class="d-flex pt-3 pt-sm-0">
+            <div class="dropdown ms-n3">
+              <button class="btn btn-light btn-link btn-sm dropdown-toggle fw-normal py-2" type="button" data-bs-toggle="dropdown"><i class="fi-globe me-2"></i>
+              English
+            </button>
+              <div class="dropdown-menu dropdown-menu-dark w-100">
+                <a class="dropdown-item" href="#">English</a>
+                <a class="dropdown-item" href="#">Arabic</a>
+                <a class="dropdown-item" href="#">Persian</a>
+              </div>
+            </div>
+          </div> 
+          
+          
+            <img src="img/logo/logo-light.svg" width="116" alt="logo">
+          
+         
+        </div>
       </div>
 
-      <h1>
-        
-      </h1>
-</body>
+    </footer>
+    <!-- Back to top button-->
+    <a class="btn-scroll-top" href="#top" data-scroll><span class="btn-scroll-top-tooltip text-muted fs-sm me-2">Top</span><i class="btn-scroll-top-icon fi-chevron-up">   </i></a>
+    <!-- Vendor scrits: js libraries and plugins-->
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/simplebar/dist/simplebar.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/tiny-slider/dist/min/tiny-slider.js"></script>
+    <script src="vendor/jarallax/dist/jarallax.min.js"></script>
+    <script src="vendor/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="vendor/parallax-js/dist/parallax.min.js"></script>
+    <!-- Main theme script-->
+    <script src="js/theme.min.js"></script>
+  </body>
+
 </html>
