@@ -27,6 +27,7 @@
           "text-align: -webkit-match-parent"
         ]
       }
-    ]
+    ],
+    "disown-opener": "off"
   }
 }
